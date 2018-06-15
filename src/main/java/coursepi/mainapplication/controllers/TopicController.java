@@ -21,7 +21,7 @@ public class TopicController {
 	private TopicRepository topicRepository;
 
 
-
+	//Comments
 	@GetMapping("/")
 	public List<TopicQueryObject> getAllTopics() {
 		return topicRepository.findAll();
