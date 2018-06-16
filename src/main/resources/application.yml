@@ -8,5 +8,3 @@ spring:
       enabled: false
 queue:
    name: topics
-server:
-  port: 8090
