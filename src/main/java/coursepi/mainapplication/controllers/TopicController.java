@@ -1,16 +1,14 @@
 package coursepi.mainapplication.controllers;
 
- 
+
 import coursepi.mainapplication.command.TopicServiceCommand;
 import coursepi.mainapplication.repsository.TopicQueryObject;
 import coursepi.mainapplication.repsository.TopicRepository;
-import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
-import java.util.concurrent.CompletableFuture;
 
 @RestController
 

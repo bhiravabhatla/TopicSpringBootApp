@@ -1,13 +1,6 @@
 package coursepi.mainapplication.command;
 
 
-import coursepi.mainapplication.events.TopicCreatedEvent;
-import org.axonframework.eventhandling.EventHandler;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.jms.core.JmsTemplate;
-
-
 public class TopicServiceCommand {
 
 
