@@ -6,6 +6,4 @@ spring:
     in-memory: true
     pool:
       enabled: false
-    x=/mkyong
-server:
-  context-path: /topic
+
