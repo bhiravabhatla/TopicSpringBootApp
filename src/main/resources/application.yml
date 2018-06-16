@@ -6,5 +6,6 @@ spring:
     in-memory: true
     pool:
       enabled: false
-queue:
-   name: topics
+    x=/mkyong
+server:
+  context-path: /topic
