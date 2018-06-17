@@ -26,7 +26,7 @@ pipeline {
 
 
             steps {
-                sh "cp target/*.war /Users/bsantosh/Downloads/apache-tomcat-8.5.31/webapps"
+                sh "cp target/topic.war /Users/bsantosh/Downloads/apache-tomcat-8.5.31/webapps"
             }
 
 
