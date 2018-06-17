@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'maven'
+    }
+
     parameters {
         string(name: 'tomcat_dev', defaultValue: 'ec2-18-222-139-240.us-east-2.compute.amazonaws.com', description: 'Staging Server')
     }
