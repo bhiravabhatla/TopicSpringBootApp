@@ -17,7 +17,7 @@ pipeline {
             post {
                 success {
                     echo 'Now Archiving...'
-                    archiveArtifacts artifacts: '**/target/*.war'
+                    archiveArtifacts artifacts: 'target/*.war'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
 
 
             steps {
-                sh "scp -i ~/tomcatkeys.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat8/webapps"
+                sh "scp -i ~/tomcatkeys.pem target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat8/webapps"
             }
 
 
