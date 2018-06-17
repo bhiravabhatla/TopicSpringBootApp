@@ -5,19 +5,16 @@ pipeline {
 
     stages {
 
-        stage ('Build'){
+        stage('Build') {
 
             steps {
                 sh 'mvn clean install'
             }
-
-
-        }
-
-        post {
-            success {
-                 echo "now archiving..."
-                 archiveartifacts artifacts '**/target/*.war'
+            post {
+                success {
+                    echo "now archiving..."
+                    archiveartifacts artifacts '**/target/*.war'
+                }
             }
         }
     }
